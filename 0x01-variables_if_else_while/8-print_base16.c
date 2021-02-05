@@ -9,17 +9,14 @@
 int main(void)
 {
 	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+
+	char alpha;
+	for (n = 48; n < 58; n++)
+		putchar(n);
+	for (alpha = 'a'; alpha <= 'f'; alpha++)
 	{
-		printf("%d is positive\n", n);
+		putchar(alpha);
 	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-		printf("%d is negative\n", n);
+	putchar('\n');
 	return (0);
 }
