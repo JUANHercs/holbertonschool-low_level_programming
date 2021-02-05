@@ -8,18 +8,15 @@
  */
 int main(void)
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	char alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		printf("%d is positive\n", n);
+		if ((alpha == 'q') || (alpha == 'e'))
+			continue;
+		else
+			putchar(alpha);
 	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-		printf("%d is negative\n", n);
+	putchar('\n');
 	return (0);
 }
