@@ -1,9 +1,10 @@
 #include"holberton.h"
-/**
-* prototype  - int _islower(int c)
-* Return: 1 if is c, 0 oyherwise[D[D[D
-*/
 
+/**
+ * _islower - checks if passes character is lowercase
+ * @c: is the argument of the protoype
+ * Return: 1 if is c, 0 oyherwise
+ */
 int _islower(int c)
 {
 	int a, b;
@@ -15,6 +16,6 @@ int _islower(int c)
 			b = 1;
 			return (b);
 		}
-	 }
+	}
 	return (0);
 }
