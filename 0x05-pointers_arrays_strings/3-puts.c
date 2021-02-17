@@ -3,13 +3,12 @@
 /**
  *_puts - prints a string
  *@str: the string
- *@m: index
  *Return: void
  */
 
 void _puts(char *str)
 {
-	int m = 0;
+	int  m = 0;
 
 	while (*(str + m) != '\0')
 	{
