@@ -1,0 +1,1 @@
+This project is about understanding arrays manipulate them with pointers and undestand the memory allocation
