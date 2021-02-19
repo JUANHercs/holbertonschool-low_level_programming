@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
  **_strcat - prototuype
+ *@dest: pointer to char
+ *@src: pointer to char
  *Return: pointer to resulting string
  **/
 
