@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  _strstr - locate first occurrence of `needle' in `haystack'
+ *  _strstr - locate first occurrence of `needle' in `haystack'
  * @haystack: string to search
  * @needle: string to search for
  *
