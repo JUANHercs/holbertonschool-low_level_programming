@@ -1,22 +1,25 @@
 #include "function_pointers.h"
 
 /**
- *array_iterator - function
+ *int_index - function name
  *@array: array of elements
  *@size: size of array
- *@action: pointer to the function
- *Return: void
+ *@cmp: pointer to the function that compares
+ *Return: int
  *
  */
-
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i;
+	int i;
 
-	if (array == NULL || action == NULL)
-		return;
-	for (i = 0; i < size ; i++)
+	if (array == NULL || !cmp || size <= 0)
 	{
-		(*action)(array[i]);
+		return (-1);
 	}
+	for (i = 0; i <= size; i++)
+	{
+		if ((*cmp)(array[i]))
+		    return (i);
+	}
+	return (-1);
 }
