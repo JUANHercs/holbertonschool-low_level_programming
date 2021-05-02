@@ -1,6 +1,6 @@
 #include"lists.h"
 /**
- *print_listint - function to print list and elements
+ *print_dlistint - function to print list and elements
  *@h: pointer to the fist element of the struct list
  *Return: numeber of nodes
  **/
