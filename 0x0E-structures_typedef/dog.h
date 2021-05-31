@@ -2,8 +2,8 @@
 #define DOGGY
 
 /**
- *struct dog - the struture
- *@name: the name
+ *struct dog - the strcture
+ *@name: the name of doggy
  *@age: age of the dog
  *@owner: the name of the owner of the dog
  */
