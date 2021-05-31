@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  *print_dog - function prints struct dog
- *@d: pointer of struct dog
+ *@d: pointer to struct dog
 **/
 
 void print_dog(struct dog *d)
@@ -14,12 +14,12 @@ void print_dog(struct dog *d)
 		}
 	if (d->name == NULL)
 	{
-		printf("Name: (nil)");
+		printf("Name: (nil)\n");
 	} else
 	{
 		printf("Name: %s\n", d->name);
 	}
-			printf("Age: %f\n", d->age);
+		printf("Age: %f\n", d->age);
 	if ((*d).owner == NULL)
 	{
 		printf("Owner: (nil)\n");
